@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Álgebra Memory</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="logo">
+    <canvas id="logoCanvas" width="80" height="80"></canvas>
+    <h1>Álgebra Memory</h1>
+  </div>
+  <p class="subtitle">Empareja ecuaciones con su gráfica — aprende jugando</p>
+</header>
+
+<section class="controls">
+  <label>Modo:
+    <select id="modeSelect">
+      <option value="free">Libre</option>
+      <option value="exam">Examen (tiempo)</option>
+      <option value="progressive">Progresivo</option>
+    </select>
+  </label>
+  <label id="timeLabel" class="hidden">Tiempo (seg): <input id="examTime" type="number" min="30" value="60"></label>
+  <button id="startBtn" class="btn">Iniciar juego</button>
+  <button id="resetBtn" class="btn secondary">Reiniciar</button>
+  <div id="hud" class="hud">
+    <span id="score">Puntaje: 0</span>
+    <span id="timer" class="hidden">Tiempo: <b id="timeLeft">0</b>s</span>
+  </div>
+</section>
+
+<main id="gameArea" class="game-area">
+  <div id="board" class="board"></div>
+</main>
+
+<!-- Modal explicación -->
+<div id="infoModal" class="modal hidden">
+  <div class="modal-content">
+    <button id="closeInfo" class="close">✕</button>
+    <h3 id="modalTitle">¡Bien hecho!</h3>
+    <p id="modalText"></p>
+    <button id="continueBtn" class="btn">Continuar</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <small>Hecho con ♥ para aprender álgebra. Prototipo PWA - funciona offline.</small>
+</footer>
+
+<script src="datos.json" defer></script>
+<script src="app.js" defer></script>
+<script src="sw-register.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "levels": [
+    {
+      "id": "lineales",
+      "name": "Lineales - Básico",
+      "pairs": [
+        {
+          "id": "l1",
+          "equation": "y=2*x+3",
+          "prompt": "y = 2x + 3"
+        },
+        {
+          "id": "l2",
+          "equation": "y=-1*x+1",
+          "prompt": "y = -x + 1"
+        },
+        {
+          "id": "l3",
+          "equation": "y=0.5*x-2",
+          "prompt": "y = 0.5x - 2"
+        },
+        {
+          "id": "l4",
+          "equation": "y=3*x+0",
+          "prompt": "y = 3x"
+        }
+      ]
+    },
+    {
+      "id": "cuadraticas",
+      "name": "Cuadráticas - Intermedio",
+      "pairs": [
+        {
+          "id": "c1",
+          "equation": "y=1*x*x-4",
+          "prompt": "y = x² - 4"
+        },
+        {
+          "id": "c2",
+          "equation": "y=1*x*x+2*x-3",
+          "prompt": "y = x² + 2x - 3"
+        },
+        {
+          "id": "c3",
+          "equation": "y=-1*x*x+2",
+          "prompt": "y = -x² + 2"
+        }
+      ]
+    },
+    {
+      "id": "sistemas",
+      "name": "Sistemas - Avanzado (parejas de ecuaciones)",
+      "pairs": [
+        {
+          "id": "s1",
+          "equations": [
+            "y=2*x+1",
+            "y=-1*x+4"
+          ],
+          "prompt": "Sistema: y = 2x+1  y = -x+4"
+        },
+        {
+          "id": "s2",
+          "equations": [
+            "y=1*x+0",
+            "y=0.5*x+1"
+          ],
+          "prompt": "Sistema: y = x  y = 0.5x+1"
+        }
+      ]
+    }
+  ]
+}
